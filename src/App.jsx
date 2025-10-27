@@ -8,7 +8,6 @@ import Cart from './pages/cart/cart.jsx';
 import Navbar from './components/nav.jsx';
 import {Shopcontextprovider} from './context/shopcontext.jsx'
 function App() {
-
   return (
     <div style={{height:'5000px'}}>
       <Shopcontextprovider>
@@ -17,7 +16,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/cart' element={<Cart/>}/>
-
         </Routes>
       </Router>
       </Shopcontextprovider>
