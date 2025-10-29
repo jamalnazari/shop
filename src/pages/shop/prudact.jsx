@@ -10,13 +10,13 @@ const Prudact = ({ data }) => {
   return (
     <div className="col-3 text-center">
       <img src={data.productimg} alt={data.name} width="150" />
-      <h5>{data.name}</h5>
-      <p>{data.price.toLocaleString()} تومان</p>
+      <h5 className="fontG">{data.name}</h5>
+      <p className="fontG">{data.price.toLocaleString()} تومان</p>
 
-      <button className="btn btn-info btn-sm" onClick={() => addTocart(data.id)}>+</button>
+      <button className="btn btn-add btn-info btn-sm" onClick={() => addTocart(data.id)}>+</button>
 
       <span className="mx-1">{count}</span>
-      {count > 0 && (<button className="btn btn-danger btn-sm"onClick={() => removeFormcart(data.id)} >-</button>)}
+      {count > 0 && (<button className="btn btn-remov btn-danger btn-sm"onClick={() => removeFormcart(data.id)} >-</button>)}
     </div>
   );
 };

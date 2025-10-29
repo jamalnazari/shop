@@ -10,6 +10,7 @@ const Shop = () => {
           <Prudact key={prudactdata.id} data={prudactdata} />
         ))}
       </div>
+      
     </div>
   );
 };
